@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 200 100% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 200 100% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 200 100% 15%;
+
+    /* India Saffron - Primary brand color */
+    --primary: 33 95% 54%;
+    --primary-foreground: 0 0% 100%;
+    --primary-light: 33 95% 65%;
+    
+    /* India Green - Secondary accent */
+    --secondary: 128 91% 27%;
+    --secondary-foreground: 0 0% 100%;
+    --secondary-light: 128 80% 40%;
+
+    /* Royal Blue - Tertiary accent */
+    --tertiary: 200 100% 28%;
+    --tertiary-foreground: 0 0% 100%;
+    --tertiary-light: 195 100% 38%;
+
+    --muted: 200 20% 96%;
+    --muted-foreground: 200 15% 45%;
+
+    --accent: 33 95% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 20% 90%;
+    --input: 200 20% 90%;
+    --ring: 33 95% 54%;
+
+    --radius: 0.75rem;
+
+    /* Custom gradients */
+    --gradient-india: linear-gradient(135deg, hsl(33 95% 54%), hsl(128 91% 27%));
+    --gradient-ocean: linear-gradient(135deg, hsl(195 100% 38%), hsl(200 100% 28%));
+    --gradient-hero: linear-gradient(135deg, hsl(200 100% 28% / 0.95), hsl(195 100% 38% / 0.9));
+    
+    /* Shadows */
+    --shadow-elegant: 0 10px 40px -10px hsl(200 100% 28% / 0.15);
+    --shadow-card: 0 4px 20px hsl(200 100% 28% / 0.08);
+    --shadow-glow: 0 0 30px hsl(33 95% 54% / 0.2);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .dark {
+    --background: 200 30% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 200 25% 12%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 200 25% 12%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 33 95% 54%;
+    --primary-foreground: 0 0% 100%;
+    
+    --secondary: 128 80% 35%;
+    --secondary-foreground: 0 0% 100%;
+
+    --tertiary: 195 100% 38%;
+    --tertiary-foreground: 0 0% 100%;
+
+    --muted: 200 25% 18%;
+    --muted-foreground: 200 15% 65%;
+
+    --accent: 33 95% 54%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 50%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 200 25% 20%;
+    --input: 200 25% 20%;
+    --ring: 33 95% 54%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
