@@ -8,7 +8,7 @@ const Footer = () => {
     { name: "About Us", href: "/about" },
     { name: "Tour Packages", href: "/packages" },
     { name: "Cities", href: "/cities" },
-    { name: "Travel Guide", href: "/guide" },
+    // { name: "Travel Guide", href: "/guide" },
     { name: "Contact Us", href: "/contact" },
   ];
 

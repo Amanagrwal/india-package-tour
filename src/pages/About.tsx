@@ -5,10 +5,12 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import StickyContact from "@/components/StickyContact";
 import InquiryModal from "@/components/InquiryModal";
-import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Shield, Award, Users, Globe, Heart, CheckCircle2 } from "lucide-react";
 import CTA_Section_internal from "@/components/Subcomponenet/CTA_Section_internal";
+import Our_team from "@/components/Subcomponenet/Our_team";
+import Why_choose_us from "@/components/Subcomponenet/Why_choose_us";
+import CTA_Section from "@/components/Subcomponenet/CTA_Section";
 
 const About = () => {
   const [inquiryModalOpen, setInquiryModalOpen] = useState(false);
@@ -36,37 +38,9 @@ const About = () => {
     }
   ];
 
-  const whyChooseUs = [
-    "15+ years of experience in India tourism",
-    "500+ successful tours conducted",
-    "24/7 customer support during your trip",
-    "Customized itineraries for every traveler",
-    "Best price guarantee on all packages",
-    "Certified and experienced tour guides",
-    "Complete transparency - no hidden costs",
-    "Flexible booking and cancellation policies"
-  ];
 
-  const team = [
-    {
-      name: "Rajesh Kumar",
-      role: "Founder & CEO",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
-      description: "20+ years in travel industry"
-    },
-    {
-      name: "Priya Sharma",
-      role: "Tour Operations Head",
-      image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&q=80",
-      description: "Expert in destination management"
-    },
-    {
-      name: "Amit Patel",
-      role: "Customer Relations Manager",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400&q=80",
-      description: "Ensuring exceptional experiences"
-    }
-  ];
+
+
 
   return (
     <>
@@ -189,72 +163,14 @@ const About = () => {
         </section>
 
         {/* Why Choose Us */}
-        <section className="py-16 bg-muted/30">
-          <div className="container mx-auto px-4">
-            <div className="max-w-4xl mx-auto">
-              <div className="text-center mb-12">
-                <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                  Why Choose India Package Tours?
-                </h2>
-                <p className="text-lg text-muted-foreground">
-                  What makes us different from other tour operators
-                </p>
-              </div>
-              <div className="grid md:grid-cols-2 gap-4">
-                {whyChooseUs.map((reason, index) => (
-                  <div key={index} className="flex items-start gap-3 p-4 bg-card rounded-lg">
-                    <CheckCircle2 className="h-6 w-6 text-primary flex-shrink-0 mt-0.5" />
-                    <span className="text-muted-foreground">{reason}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </div>
-        </section>
+       <Why_choose_us/>
 
         {/* Team Preview */}
-        <section className="py-16">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-                Meet Our Team
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-                Passionate travel experts dedicated to creating your perfect journey
-              </p>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8 mb-8">
-              {team.map((member, index) => (
-                <Card key={index} className="overflow-hidden hover:shadow-elegant transition-all">
-                  <div className="relative aspect-square overflow-hidden">
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="p-6 text-center">
-                    <h3 className="text-xl font-bold text-foreground mb-1">{member.name}</h3>
-                    <p className="text-primary font-medium mb-2">{member.role}</p>
-                    <p className="text-sm text-muted-foreground">{member.description}</p>
-                  </div>
-                </Card>
-              ))}
-            </div>
-            <div className="text-center">
-              <Link to="/team">
-                <Button variant="hero" size="lg">
-                  View Full Team
-                </Button>
-              </Link>
-            </div>
-          </div>
-        </section>
+         <Our_team/>
 
         {/* CTA Section */}
 
-       <CTA_Section_internal/>
-
+        <CTA_Section/>
       </main>
 
       <Footer />

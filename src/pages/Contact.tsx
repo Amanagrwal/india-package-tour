@@ -229,6 +229,7 @@ const Contact = () => {
             </div>
           </div>
         </section>
+        
 
         {/* Quick Contact CTA */}
       <CTA_Section/>

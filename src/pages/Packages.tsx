@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Clock, MapPin, Star, Heart, Search } from "lucide-react";
 import { Input } from "@/components/ui/input";
+import CTA_Section from "@/components/Subcomponenet/CTA_Section";
 
 const Packages = () => {
   const [selectedCity, setSelectedCity] = useState("all");
@@ -357,6 +358,7 @@ const Packages = () => {
             )}
           </div>
         </section>
+          <CTA_Section/>
       </main>
 
       <Footer />

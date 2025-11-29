@@ -85,7 +85,7 @@ const HeroSection = () => {
             <div className="flex gap-3 mt-3 flex-wrap">
               <Link to="/packages">
               <Button variant="hero" size="sm" className="px-5 py-2 md:px-6 md:py-3">
-                Explore Packages
+                  Explore Packages
               </Button>
               
               </Link>
@@ -96,7 +96,7 @@ const HeroSection = () => {
                 className="bg-white/10 text-white border-white hover:bg-white hover:text-tertiary px-5 py-2 md:px-6 md:py-3"
                 onClick={() => setInquiryModalOpen(true)}
               >
-                Book your Tour
+              <Send/>  Book your Tour
               </Button>
             </div>
           </div>

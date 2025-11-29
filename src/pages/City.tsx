@@ -2,6 +2,7 @@ import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Destinations from '@/components/home/Destinations'
 import StickyContact from '@/components/StickyContact'
+import CTA_Section from '@/components/Subcomponenet/CTA_Section'
 import React from 'react'
 import { Helmet } from 'react-helmet'
 
@@ -35,7 +36,7 @@ function City() {
                 </section>
 
                  <Destinations showButton={false} />
-
+             <CTA_Section/>
             </main>
              <Footer />
       <StickyContact />

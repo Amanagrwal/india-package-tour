@@ -8,6 +8,7 @@ import Testimonials from "@/components/home/Testimonials";
 import StickyContact from "@/components/StickyContact";
 import CTA_Section from "@/components/Subcomponenet/CTA_Section";
 import Star from "@/components/Subcomponenet/Star";
+import Our_team from "@/components/Subcomponenet/Our_team";
 
 const Index = () => {
   return (
@@ -19,6 +20,7 @@ const Index = () => {
         <SafetyCommitment />
         <Destinations showButton={true} />
         <Testimonials />
+        <Our_team/>
         <Star/>
         <CTA_Section/>
       </main>

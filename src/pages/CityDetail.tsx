@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Card } from "@/components/ui/card";
 import { MapPin, Calendar, Thermometer, Clock, Star, CheckCircle2, Users } from "lucide-react";
+import CTA_Section_internal from "@/components/Subcomponenet/CTA_Section_internal";
 
 const CityDetail = () => {
   const { citySlug } = useParams();
@@ -20,7 +21,7 @@ const CityDetail = () => {
       name: "Jaipur",
       state: "Rajasthan",
       tagline: "The Pink City of India",
-      image: "https://images.unsplash.com/photo-1599661046827-dacff0c0f09f?w=1200&q=80",
+      image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da?w=800&q=80",
       description: "Jaipur, the capital of Rajasthan, is known as the Pink City due to the distinctive color of its buildings. Founded in 1727 by Maharaja Sawai Jai Singh II, this vibrant city is a perfect blend of ancient heritage and modern development. The city is part of the famous Golden Triangle tourist circuit along with Delhi and Agra.",
       history: "Jaipur was built by Maharaja Sawai Jai Singh II in 1727, who was a patron of architecture and science. The city was painted pink in 1876 to welcome the Prince of Wales, and the color has been maintained ever since. The city's architecture follows the principles of Vastu Shastra and was designed by the chief architect Vidyadhar Bhattacharya.",
       bestTime: "October to March",
@@ -446,6 +447,9 @@ const CityDetail = () => {
             </div>
           </section>
         </div>
+
+
+        <CTA_Section_internal/>
       </main>
 
       <Footer />
