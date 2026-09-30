@@ -9,10 +9,15 @@ import StickyContact from "@/components/StickyContact";
 import CTA_Section from "@/components/Subcomponenet/CTA_Section";
 import Star from "@/components/Subcomponenet/Star";
 import Our_team from "@/components/Subcomponenet/Our_team";
+import SEO from "@/components/SEO";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <SEO 
+        title="India Tour Packages | Best Travel Packages for India Tours 2024"
+        description="Explore India with customized tour packages. Best prices for Golden Triangle, Rajasthan, Kerala, Goa tours. Book your dream India vacation today!"
+      />
       <Header />
       <main>
         <HeroSection />
